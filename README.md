@@ -7,6 +7,7 @@
 <h1>Feature</h1>
 <br>
 <ul>
+<br>
 <li>Play/Pause Functionality: Easily toggle between playing and pausing the current track.</li>
 <li>Dynamic Button Icons: The play and pause buttons automatically switch icons based on the player state.</li>
 <li>Track Navigation: Users can skip to the next or previous track.</li>
