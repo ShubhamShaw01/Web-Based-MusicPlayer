@@ -13,3 +13,7 @@
 <li>Track Navigation: Users can skip to the next or previous track.</li>
 <li>Responsive Design: The player is designed to work on both desktop</li>
 </ul>
+
+# demo video
+
+[![Watch the video](https://github.com/user-attachments/assets/42a1274b-bcf2-4016-b2d0-b5f7895a84e1)](https://github.com/user-attachments/assets/73464ef0-2851-4156-8ffb-fd66e3d0b3c1)
