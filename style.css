@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: grey;
+    background-color: #040404;
+    margin: unset;
+    padding-bottom: 2%;
+}
+
+.banner {
+    background-image: url(images/banner.webp); 
+    background-size: cover;
+    background-position: center;
+    height: 18em;
+}
+
+.left-banner {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.left-img {
+    width: 12em;
+    margin-right: 1em;
+}
+
+.heading {
+    color: black;
+}
+
+.main-section {
+    margin: auto;
+    width: 80%;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    margin-top: 2em;
+    color: white;
+}
+
+thead th {
+    padding: 1em;
+    font-size: large;
+    border-bottom: 2px solid grey;
+}
+
+.song-number {
+    width: 20px;
+}
+
+.song-title {
+    width: 550px;
+}
+
+.song-artist {
+    width: 250px;
+}
+
+.song-duration {
+    width: 100px;
+}
+
+tbody td {
+    padding: 1.2em;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    color: white;
+    background-color: #333333;
+}
+
+.controls img {
+    margin-top: 1em;
+    width: 3.5em;
+    cursor: pointer;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.songInfo img {
+    margin-right: 10px;
+}
+
+#myProgressBar {
+    width: 80%;
+    margin-bottom: 10px;
+}
+.hide{
+    visibility: hidden;
+}

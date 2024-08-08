@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="ico" href="images/webmusicplayer.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Web-Based Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" src="images/images.jpeg" alt="Left Banner Image">
+            <div class="heading" style="display: inline-block; color: black;">
+                <h1>NCS Release</h1>
+                <p>Copyright Free Music</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="controls" onclick="playaudio()" id="play-pause">
+            <img class="play-button" src="images/play-button.svg" alt="Play Button">
+        </div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="song-number">#</th>
+                    <th class="song-title">Title</th>
+                    <th class="song-artist">Artist</th>
+                    <th class="song-duration">Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="song1" onclick="playAll(1)">
+                    <td>1</td>
+                    <td>Dreamer</td>
+                    <td>Alan Walker</td>
+                    <td>2:35</td>
+                </tr>
+                <tr id="song2" onclick="playAll(2)">
+                    <td>2</td>
+                    <td>Sky High</td>
+                    <td>Elektronomia</td>
+                    <td>3:56</td>
+                </tr>
+                <tr id="song3" onclick="playAll(3)">
+                  <td>3</td>
+                  <td>Slow Mo</td>
+                  <td>7sunami</td>
+                  <td>2:24</td>
+                </tr>
+                <tr id="song4" onclick="playAll(4)">
+                  <td>4</td>
+                  <td>On & On</td>
+                  <td>Cartoon, Daniel levi</td>
+                  <td>3:27</td>
+                </tr>
+                <tr id="song5" onclick="playAll(5)">
+                  <td>5</td>
+                  <td>Be</td>
+                  <td>ARMAN,V3NUS</td>
+                  <td>3:00</td>
+                </tr>
+                <tr id="song6" onclick="playAll(6)">
+                  <td>6</td>
+                  <td>Where we Started</td>
+                  <td>Lost Sky,Jex</td>
+                  <td>3:42</td>
+                </tr>
+                <tr id="song7" onclick="playAll(7)">
+                  <td>7</td>
+                  <td>Baseline</td>
+                  <td>Chylds</td>
+                  <td>3:06</td>
+                </tr>
+                <tr id="song8" onclick="playAll(8)">
+                  <td>8</td>
+                  <td>Feel Good</td>
+                  <td>Syn Cole</td>
+                  <td>3:01</td>
+                </tr>
+                <tr id="song9" onclick="playAll(9)">
+                  <td>9</td>
+                  <td>Strangers</td>
+                  <td>Afkara</td>
+                  <td>2:23</td>
+                </tr>
+                <tr id="song10" onclick="playAll(10)">
+                  <td>10</td>
+                  <td>Fearless Pt. II</td>
+                  <td>Lost Sky</td>
+                  <td>3:14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bottom hide">
+        <input type="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-step-backward" id="previous" onclick="previousSong()"></i>
+            <i class="far fa-play-circle" id="masterPlay" onclick="playaudio()"></i>
+            <i class="fas fa-step-forward" id="next" onclick="nextSong()"></i>
+        </div>
+        <div class="songInfo">
+            <img src="images/playing.gif" width="42px" alt="Playing" id="gif" style="visibility: hidden;">
+            <span id="masterSongName"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
